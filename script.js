@@ -24,6 +24,9 @@ async function checkWeather(city){
         console.log("error");
         return;
     }
+    if (inputBox.value ===  ""){
+        alert("Please enter a city name!");
+    }
 
     console.log("run");
     location_not_found.style.display = "none";
@@ -37,19 +40,19 @@ async function checkWeather(city){
 
     switch(weather_data.weather[0].main){
         case 'Clouds':
-            weather_img.src = "cloud.webp";
+            weather_img.src = "/images/cloud.webp";
             break;
         case 'Clear':
-            weather_img.src = "clear.png";
+            weather_img.src = "/images/clear.png";
             break;
         case 'Rain':
-            weather_img.src = "rain.webp";
+            weather_img.src = "/images/rain.webp";
             break;
         case 'wind':
-            weather_img.src = "wind.webp";
+            weather_img.src = "/images/wind.webp";
             break;
         case 'Snow':
-            weather_img.src = "snow.webp";
+            weather_img.src = "/images/snow.webp";
             break;
 
     }

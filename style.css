@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/bg.jpg);
+    background: url(/images/bg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -57,9 +57,13 @@ body{
     background: transparent;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     border: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .search-box button:hover{
     color: #fff;
